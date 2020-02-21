@@ -1,0 +1,13 @@
+<input type="text"
+[(ngModel)]="username">
+
+<button class="btn btn-primary"
+[disabled]="username === ''"
+(click)="onCreateServer()">Display Details</button>
+
+<p *ngFor="let i of servers">
+   {{i}} 
+</p>
+
+
+
