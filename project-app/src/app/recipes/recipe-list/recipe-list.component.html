@@ -8,7 +8,6 @@
     <div class="col-xs-12">
         <app-recipe-item
         *ngFor="let i of recipes"
-        [recipe] = "i"
-        (click)= "onSelectedRecipe(i)"></app-recipe-item>
+        [recipe] = "i"></app-recipe-item>
     </div>
 </div>
