@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-xs-12">
+        <form>
+            <div class="row">
+                <div class="col-sm-3 form-group">
+                    <label for="name">Artikel</label>
+                    <input type="text"
+                    id="name"
+                    class="form-control"
+                    #nameInput>
+                </div>
+                <div class="col-sm-3 form-group">
+                    <label for="description">Beskrivning</label>
+                    <input
+                    type="text"
+                    id="description"
+                    class="form-control"
+                    #descInput>
+                </div>
+                <div class="col-sm-3 form-group">
+                    <label for="url">URL</label>
+                    <input
+                    type="text"
+                    id="url"
+                    class="form-control"
+                    #urlInput>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-success"
+                    type="button"
+                    (click) = "onAddItem()">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

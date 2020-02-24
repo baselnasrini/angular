@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="col-xs-12" *ngIf ="items.length > 0; else infoText">
+        <h2>Ert order</h2>
+        <hr>
+        <div class="col-xs-12">
+            <div class="list-group-item clearfix"
+            *ngFor="let item of items ; let i = index">
+                <a
+                [href] = "item.url"
+                target="_blank">{{item.name}}
+                </a>
+                ({{item.description}})
+                <button 
+                
+                type="button"
+                class="btn btn-primary deleteButton pull-right"
+                (click) = "delete(i)">
+                Remove </button>
+            </div>
+        </div>
+    </div>
+    <ng-template #infoText>
+        <h4>Din kundvagn är tom</h4>
+    </ng-template>
+</div>
