@@ -1,0 +1,7 @@
+.thumbnail{
+    height: 480px;
+}
+.caption{
+    height:263px ;
+    overflow: hidden;
+}

@@ -1,1 +1,26 @@
-<p>news works!</p>
+<div class="row"
+    *ngIf = "news != null">
+    <div
+    class="col-xs-6 col-xs-4 article"
+    *ngFor="let i of news"
+    >
+      <div class="thumbnail">
+        <img [src]="i.urlToImage"
+        alt="{{i.title}}"
+        width="250"
+        height="130"
+        >
+        <div class="caption">
+          <h3>{{i.title}}</h3>
+          <p>{{i.description}}</p>
+          
+        </div>
+        <div class="col-xs-6">
+            <p><a [href]="i.url" target="_blank" class="btn btn-primary" role="button">Läsa artiklen</a></p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
