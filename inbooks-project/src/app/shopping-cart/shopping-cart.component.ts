@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Item } from '../shared/item.module';
-import { ShoppingCartService } from '../shared/shoppung-cart.service';
-import { EventEmitter } from 'events';
+import { ShoppingCartService } from '../shared/shopping-cart.service';
 
 @Component({
   selector: 'shopping-cart-list',

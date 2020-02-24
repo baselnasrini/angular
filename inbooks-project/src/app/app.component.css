@@ -1,0 +1,9 @@
+.container{
+    height: 530px;
+}
+
+.footer{
+    position: relative; 
+    bottom: 10px;
+    text-align: right;
+}
