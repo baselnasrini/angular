@@ -1,6 +1,6 @@
 <a class="list-group-item clearfix" (click)="onSelected()">
     <div class="pull-left">
-        <h4 class="list-group-item-heading">{{item.name}}</h4>
+        <h4 class="list-group-item-heading"><a [href] = "item.url" target="_blank">{{item.name}}</a></h4>
         <p class="list-group-item-text">{{item.description}}</p>
     </div>
  </a>
